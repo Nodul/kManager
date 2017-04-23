@@ -200,6 +200,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ExampleController.cs" />
+    <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
@@ -277,6 +279,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Example\Index.cshtml" />
+    <Content Include="Views\Example\Secret.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

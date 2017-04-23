@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kManager.Web", "kManager.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kManager.Domain", "kManager.Domain\kManager.Domain.csproj", "{8E195150-4F9B-419A-B68C-D35A5C4ECE56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kManager.Tests", "kManager.Tests\kManager.Tests.csproj", "{E23A1360-47DB-4A43-8F21-859E280F8494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8E195150-4F9B-419A-B68C-D35A5C4ECE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E195150-4F9B-419A-B68C-D35A5C4ECE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E195150-4F9B-419A-B68C-D35A5C4ECE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E23A1360-47DB-4A43-8F21-859E280F8494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E23A1360-47DB-4A43-8F21-859E280F8494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E23A1360-47DB-4A43-8F21-859E280F8494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E23A1360-47DB-4A43-8F21-859E280F8494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
