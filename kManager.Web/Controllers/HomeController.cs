@@ -1,4 +1,6 @@
-﻿using System;
+﻿using kManager.Domain;
+using kManager.Web.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,14 @@ namespace kManager.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private IDepartmentDataSource _db = new DepartmentDB();
+
+        public HomeController(IDepartmentDataSource departmentDatasource)
+        {
+            this._db = departmentDatasource;
+        }
+
+
         public string HelloWorld()
         {
             string result = "";
@@ -21,8 +31,9 @@ namespace kManager.Web.Controllers
 
         public ActionResult Index()
         {
-            // Want to display a list of all employees here
-            return View();
+            var allDepartments = _db.Departments;
+
+            return View(allDepartments);
         }
 
         public ActionResult About()

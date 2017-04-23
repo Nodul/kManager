@@ -1,5 +1,14 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<kManager.Domain.Department>
+
+@{
+    ViewBag.Title = "All Departments";
 }
 
-<h1>Department Manager ds</h1>
+<h1>@ViewBag.Title</h1>
+
+<ul>
+    @foreach(var department in Model)
+    {
+        <li>@department.Name</li>
+    }
+</ul>
